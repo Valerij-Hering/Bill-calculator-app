@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+Bill Splitter App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+The Bill Splitter App is a simple and interactive web application that allows users to easily split a bill among multiple people, including tips based on service quality. The app is built using React.js and provides a user-friendly interface with live calculations and animations.
 
-## Available Scripts
+Features
+Bill Input: Enter the total bill amount.
+People Input: Specify the number of people sharing the bill.
+Tip Selection: Choose a tip percentage based on the quality of service using interactive icons:
+😔 No Tip (0%)
+😐 It was OK (10%)
+🙂 Good service (20%)
+😍 Wow (30%)
+Real-Time Calculation: Instantly calculates:
+Bill per person.
+Tip per person.
+Total amount per person.
+Error Handling: Alerts users with meaningful error messages if required inputs are missing.
+Stylish and Responsive: Clean and modern design with responsive elements for various devices.
 
-In the project directory, you can run:
+Installation and Setup
 
-### `npm start`
+Clone the repository:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone https://github.com/your-username/bill-splitter-app.git
+cd bill-splitter-app
+Install dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+npm install
+Start the development server:
 
-### `npm test`
+npm start
+Open your browser and navigate to http://localhost:3000 to use the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Usage
+Enter the total bill amount in the Bill input field.
+Enter the number of people splitting the bill in the How many people? input field.
+Select the desired tip percentage by clicking on one of the service icons.
+Click the CALCULATE button to see:
+The bill amount per person.
+The tip amount per person.
+The total amount per person.
+Tech Stack
+React.js: Frontend library.
+SweetAlert2: For elegant alert pop-ups.
+CSS: For custom styling.
+FontAwesome: For icons representing service quality.
+Screenshots
+Main Interface:
 
-### `npm run build`
+Includes input fields for bill and people, tip selection buttons, and the calculate button.
+Result Display:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Shows the calculated bill, tip, and total per person.
+Future Enhancements
+Add currency selection for international users.
+Enhance mobile responsiveness.
+Allow custom tip percentages.
+Integrate a dark mode for better accessibility.
