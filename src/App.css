@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,600,700|Source+Sans+Pro:400,600,700&display=swap");
+
+
+* {
+    font-family: "Source Sans Pro", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:#ebecf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+  margin: 0 auto;
+    width: 90%;
+    max-width: 430px;
+    background-color:#EBECF0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    color: #1a3b5d;
+    /* box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC; */
+}
+
+
+
+h1 {
+  color: #1a3b5d;
+  align-self: center;
+  text-shadow: 1px 1px 0 white;
+  font-size: 40px;
+}
+
+input {
+  font-size: 16px;
+  background-color:#EBECF0;
+  padding: 8px;
+  width: 100%;
+  outline: none;
+  border-radius: 7px;
+  color: #61677C;
+  margin-bottom: 20px;
+  text-align: center;
+  box-shadow:  inset 2px 2px 5px #BABECC, inset -5px -5px 10px #fff;
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  margin-top: 5px;
+  border: none;
+  text-shadow: 1px 1px 0 white;
+  appearance: none;
+}
+
+input:focus {
+  box-shadow:  inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+  background-color: #EBECF0;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff !important;
+  transition: background-color 5000s ease-in-out 0s;
+} 
+
+
+#btn {
+    width: 100%;
+    background-color:#ebecf0;
+    text-shadow: 1px 1px 0 white;
+    font-size: 16px;
+    height: 50px;
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 15px;
+    color: #AE1100;
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+#btn:hover {
+    box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+#btn:active {
+    box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+}
+
+#showTotalAmountToPay {
+    width: 95%;
+}
+
+
+.container-tips_btns {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.container-tips_header {
+  color: #1a3b5d;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.tips-btn {
+  position: relative;
+  color: #1a3b5d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+}
+
+.tips-btn:hover {
+  box-shadow: -2px -2px 5px #fff, 2px 2px 5px #BABECC;
+}
+
+.tips-btn:active {
+  transition: 0.3s;
+  box-shadow: inset 7px 7px 8px #BABECC, inset -7px -7px 8px #fff;
+}
+
+.tips-btn-active {
+  position: relative;
+  color: #AE1100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #fff;
+}
+
+
+#showTotalAmountToPay {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+.billSplit, .totalTip, .totalAmount {
+    flex:1;
+    width: 150px;
+    padding: 0 10px;
+    min-height: 130px;
+    border-radius: 5px;
+    /* border: #2f3545 0.5px solid; */
+    text-align: center;
+    box-shadow: -5px -5px 20px #fff,  5px 5px 20px #BABECC;
+    color: #1a3b5d;
+    text-shadow: 1px 1px 1px white;
+
+}
+
+p {
+    text-align: center;
+    color: #1a3b5d;
+    text-shadow: 1px 1px 1px white;
+    font-size: 16px;
+}
+
+.bill-result {
+    color: #AE1100;
+}
+
+.toolTipText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+    z-index: -1;
+    position: absolute;
+    top: -51px;
+    background-color: white;
+    border: #fff 1px solid;
+    color: #1a3b5d;
+    font-weight: 600;
+    text-shadow: none;
+    font-size: 16px;
+    text-shadow: 1px 1px 1px white;
+    box-shadow:  2px 2px 7px rgb(147, 147, 147);
+    -webkit-box-shadow:  2px 2px 7px rgb(147, 147, 147);
+    white-space: nowrap;
+}
+
+.toolTipText::after {
+  content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid white; 
+    box-shadow: #00000031 0 .625rem .9375rem -.1875rem,#00000029 0 .25rem .375rem -.125rem;
+}
+
+.tips-btn:hover .toolTipText {
+  z-index: 1;
+}
+
+.tips-btn-active:hover .toolTipText {
+  z-index: 1;
+}
+
+.numberTip {
+    color: #AE1100;
+}
+
+.parBillAndTip {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
